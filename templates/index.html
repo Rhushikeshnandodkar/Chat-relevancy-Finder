@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form action="/" method="post">
+        {% csrf_token %}
+        <div class="input">
+            <label for="sdfdsf">Input-1
+            </label>
+                <input type="text" name="radius">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
